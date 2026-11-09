@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Найти утечки денег по банковской выписке: промт для ИИ</title>
+<meta name="description" content="Лиза Митрофанова делится промтом: ИИ разберёт выписки по твоим счетам, найдёт, куда незаметно уходят деньги, и покажет риски.">
+<meta property="og:title" content="Найти утечки денег по банковской выписке: промт для ИИ">
+<meta property="og:description" content="Лиза Митрофанова делится промтом: ИИ разберёт выписки по твоим счетам, найдёт, куда незаметно уходят деньги, и покажет риски.">
+<meta property="og:type" content="website">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="assets/img/favicon-l.png">
+<link rel="preload" href="assets/fonts/montserrat-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/playfair-display-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css?v=2bfb5df7">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="guide">
+<div class="progress" aria-hidden="true"><span></span></div>
+<a class="skip" href="#main">К содержанию</a>
+<header class="site-header"><div class="wrap site-header-in">
+<a class="wordmark" href="./">Лиза Митрофанова</a>
+</div></header>
+<main id="main">
+<div class="wrap guide-hero">
+<div class="guide-hero-text">
+<p class="eyebrow">Деньги · промт с конструктором</p>
+<h1>Найти утечки денег по банковской выписке</h1>
+<p class="lead">Раз в квартал я выгружаю выписки по счетам и отдаю их ИИ. Он показывает, куда уходят деньги, где дыры и чем это грозит.</p>
+</div>
+<img class="guide-hero-img" src="assets/img/card-5-promtov.jpg" alt="" width="800" height="600">
+</div>
+<div class="wrap guide-grid">
+<aside class="toc-side"><nav aria-label="Содержание страницы"><p class="toc-title">Содержание</p><ol><li><a href="#rec9000080002">Что понадобится</a></li><li><a href="#rec9000080004">Шаг 1. Выгрузи и подготовь выписки</a></li><li><a href="#rec9000080006">Шаг 2. Собери свой промт</a></li><li><a href="#rec9000080008">Шаг 3. Отправь и проверь</a></li></ol></nav></aside>
+<article class="prose">
+<details class="toc-mobile"><summary>Содержание</summary><nav aria-label="Содержание страницы"><ol><li><a href="#rec9000080002">Что понадобится</a></li><li><a href="#rec9000080004">Шаг 1. Выгрузи и подготовь выписки</a></li><li><a href="#rec9000080006">Шаг 2. Собери свой промт</a></li><li><a href="#rec9000080008">Шаг 3. Отправь и проверь</a></li></ol></nav></details>
+<h2 id="rec9000080002">Что понадобится</h2><ul class="checks"><li>Выписки по всем твоим счетам и картам за один и тот же период. Хватит 3 месяцев, лучше 6–12.</li><li>Любой ИИ, который принимает файлы: Claude, ChatGPT или Gemini. Если файл не прикрепляется, вставь операции текстом.</li><li>Пять минут, чтобы заполнить поля ниже.</li></ul><h2 id="rec9000080004">Шаг 1. Выгрузи и подготовь выписки</h2><p class="sub">Выписка содержит личные данные, поэтому перед отправкой ИИ их стоит убрать.</p><ol class="steps"><li>В приложении или в интернет-банке выгрузи выписку по каждому счёту и каждой карте за одинаковый период. Подойдёт PDF, Excel или CSV.</li><li>Открой файл и убери номера карт и счетов, паспортные данные, адрес и ФИО других людей, если они есть в шапке или в назначении платежа. Названия операций и суммы оставь, по ним ИИ и ищет утечки.</li><li>Если выписок несколько, положи их в одну папку и назови понятно: «Сбер», «Т-Банк», «Кредитка».</li><li>Загляни в настройки сервиса, которым пользуешься, и отключи использование твоих чатов для обучения, если такая настройка есть.</li></ol><h2 id="rec9000080006">Шаг 2. Собери свой промт</h2><p class="sub">Заполни поля и нажми «Сгенерировать промт». Сайт подставит ответы в текст, и тебе останется его скопировать. Пустые поля можно пропустить, они останутся в тексте в скобках.</p><form class="gen" data-gen hidden novalidate><div class="gen-grid"><div class="gen-field gen-wide"><label for="rec9000080007-period">Период выписки</label><input id="rec9000080007-period" name="period" type="text" autocomplete="off" value="" placeholder="Например, с 01.08.2026 по 31.10.2026"></div><div class="gen-field"><label for="rec9000080007-cur">Валюта</label><input id="rec9000080007-cur" name="cur" type="text" autocomplete="off" value="рубли"></div><div class="gen-field"><label for="rec9000080007-banks">Банки и счета</label><input id="rec9000080007-banks" name="banks" type="text" autocomplete="off" value="" placeholder="Сбер, Т-Банк, кредитка"></div><div class="gen-field gen-wide"><label for="rec9000080007-income">Доход в месяц</label><input id="rec9000080007-income" name="income" type="text" autocomplete="off" value="" placeholder="Например, 150 000 ₽, у мужа ещё 100 000 ₽"></div><div class="gen-field gen-wide"><label for="rec9000080007-deps">Кто у тебя на обеспечении</label><input id="rec9000080007-deps" name="deps" type="text" autocomplete="off" value="" placeholder="Например, двое детей, мама"></div><div class="gen-field gen-wide"><label for="rec9000080007-cushion">Сколько отложено на чёрный день</label><input id="rec9000080007-cushion" name="cushion" type="text" autocomplete="off" value="" placeholder="Например, 200 000 ₽ или нет"></div><div class="gen-field gen-wide"><label for="rec9000080007-fixed">Обязательные платежи, которые нельзя сократить</label><textarea id="rec9000080007-fixed" name="fixed" rows="3" placeholder="Аренда, коммунальные, связь, школа, садик, страховки, лекарства"></textarea></div><div class="gen-field gen-wide"><label for="rec9000080007-credit">Кредиты и ипотека</label><textarea id="rec9000080007-credit" name="credit" rows="3" placeholder="Если есть: платёж в месяц, остаток долга, ставка и срок по каждому кредиту. Если нет, оставь «нет»">нет</textarea></div><div class="gen-field gen-wide"><label for="rec9000080007-own">Переводы между своими счетами</label><input id="rec9000080007-own" name="own" type="text" autocomplete="off" value="" placeholder="Например, со Сбера на Т-Банк, по номеру телефона"></div><fieldset class="gen-wide"><legend>Твоя цель</legend><div class="chips"><label class="chip"><input type="checkbox" name="goal" value="понять, куда уходят деньги"><span>Понять, куда уходят деньги</span></label><label class="chip"><input type="checkbox" name="goal" value="начать копить"><span>Начать копить</span></label><label class="chip"><input type="checkbox" name="goal" value="закрыть долги"><span>Закрыть долги</span></label><label class="chip"><input type="checkbox" name="goal" value="снизить расходы"><span>Снизить расходы</span></label></div></fieldset><div class="gen-field gen-wide"><label for="rec9000080007-guess">Что ты сама подозреваешь</label><textarea id="rec9000080007-guess" name="guess" rows="3" placeholder="Например, кажется, много уходит на маркетплейсы и доставку"></textarea></div></div><button class="btn gen-submit" type="submit">Сгенерировать промт</button><p class="gen-status" role="status"></p><p class="gen-note">Ответы остаются на этой странице и никуда не отправляются.</p></form><figure class="prompt" data-gen-result><div class="prompt-bar"><span class="prompt-label">Промт</span><button class="copy" type="button" hidden>Скопировать</button></div><pre class="prompt-text" tabindex="0">Ты — финансовый аналитик личных бюджетов. Проанализируй мои банковские выписки и найди, куда незаметно уходят деньги.
+
+Исходные данные
+• Период выписки: <mark data-slot="period" data-empty="[период]">[период]</mark>
+• Валюта: <mark data-slot="cur" data-empty="[валюта]">[валюта]</mark>
+• Банки и счета: <mark data-slot="banks" data-empty="[банки и счета]">[банки и счета]</mark>
+• Доход в месяц: <mark data-slot="income" data-empty="[доход в месяц]">[доход в месяц]</mark>
+• Кто у меня на обеспечении: <mark data-slot="deps" data-empty="[иждивенцы]">[иждивенцы]</mark>
+• Денежная подушка, то есть сколько отложено на чёрный день: <mark data-slot="cushion" data-empty="[подушка]">[подушка]</mark>
+• Обязательные платежи, которые нельзя сократить: <mark data-slot="fixed" data-empty="[обязательные платежи]">[обязательные платежи]</mark>
+• Кредиты и ипотека (платёж в месяц, остаток долга, ставка, срок): <mark data-slot="credit" data-empty="[кредиты и ипотека]">[кредиты и ипотека]</mark>
+• Мои переводы между своими счетами: <mark data-slot="own" data-empty="[мои переводы себе]">[мои переводы себе]</mark>
+• Моя цель: <mark data-slot="goal" data-empty="[цель]">[цель]</mark>
+• Что я сама подозреваю: <mark data-slot="guess" data-empty="[мои подозрения]">[мои подозрения]</mark>
+
+Выписки приложены файлами или вставлены ниже текстом.
+
+Как работать
+1. Сначала прочитай все операции и скажи, сколько их и за какие даты. Если какого-то периода или счёта не хватает, скажи об этом сразу.
+2. Не считай расходом переводы между моими счетами, пополнения моих кошельков и погашение кредитной карты с моего же счёта. Покажи такие операции отдельным списком, чтобы я их проверила.
+3. Если операция непонятна, не угадывай. Собери такие операции в список и задай мне по ним вопросы.
+4. Разложи расходы по категориям и по месяцам: продукты, кафе и доставка, маркетплейсы, транспорт, жильё и коммунальные платежи, связь и подписки, здоровье, дети и учёба, одежда и красота, развлечения, кредиты и ипотека, переводы людям, снятие наличных, прочее. Сделай таблицу: категория, сумма за период, в среднем за месяц, доля от дохода.
+5. Найди утечки: частые мелкие покупки, которые за месяц дают заметную сумму; подписки и автоплатежи, особенно забытые и дублирующиеся; маркетплейсы и импульсивные покупки; доставку еды; комиссии, обслуживание карт и переводов; проценты по кредитам, кредиткам и рассрочкам; наличные, которые сняты и нигде не видны. По каждой утечке покажи сумму за период и за год и приведи 3–5 конкретных операций с датами.
+6. Отдельно посчитай кредитную нагрузку: сколько уходит на кредиты и ипотеку в месяц и какую долю это составляет от моего дохода. Если больше 40%, скажи об этом прямо. Если кредитов нет, пропусти этот пункт.
+7. Опиши мои риски, связанные с такими расходами. Разбери каждый пункт: на сколько месяцев хватит моей подушки при нынешних расходах и при расходах только на обязательное; что будет, если доход упадёт на 30% или пропадёт на два месяца; не держится ли всё на одном источнике дохода; есть ли месяцы, когда расходы выше дохода, и чем они закрывались; не растёт ли долговая нагрузка (новые рассрочки, кредитка в минус, один кредит гасится другим); какие расходы я не смогу быстро сократить, а какие можно убрать в любой день. По каждому риску назови уровень (высокий, средний или низкий), на чём он основан и что с ним делать.
+8. Назови три действия, которые вернут мне больше всего денег. Укажи, сколько они дадут в месяц и в год. Первым поставь самое простое.
+9. Каждую цифру подтверждай операциями из выписки. Не пиши «примерно» и не округляй. Если данных не хватает, напиши, чего именно.
+10. Говори прямо, без морали и осуждения. Мне нужна картина, а не лекция о том, что тратить плохо.</pre></figure><h2 id="rec9000080008">Шаг 3. Отправь и проверь</h2><ol class="steps"><li>Открой новый чат в ИИ, прикрепи файлы с выписками и вставь промт.</li><li>Сначала ИИ покажет список переводов между счетами и непонятных операций. Проверь его и ответь на вопросы: от этого зависят все цифры.</li><li>Выбери в отчёте одну-две утечки с самой большой суммой и сверь их со своим банком. Так ты убедишься, что ИИ ничего не перепутал.</li><li>Повтори раз в квартал, чтобы видеть, помогли ли твои решения.</li></ol><aside class="tip"><h3>Совет от меня</h3><p>Самые большие утечки обычно не в крупных покупках, а в мелочах, которые повторяются. Это маркетплейсы, продукты, доставка и подписки. Поэтому в промте я прошу ИИ показывать конкретные операции с датами: когда видишь у себя двенадцать заказов за месяц, спорить с цифрами уже не хочется.</p><p>У меня нет кредитов и ипотеки, а у многих они есть. Поэтому в промте для них отдельные поля, а в отчёте отдельная оценка нагрузки. Если у тебя есть кредиты, обязательно впиши их: так ИИ посчитает риски честно.</p><p>ИИ даёт аналитику, а решения принимаешь ты. Перед тем как отменять платежи или менять условия кредита, проверь цифры в банке.</p></aside>
+<section class="ending">
+<h2>Подписаться</h2>
+<p>Новые разборы и инструкции я выкладываю в блоге. Подписывайся, чтобы их не пропустить: <a href="https://www.instagram.com/elizavetamit/" target="_blank" rel="noopener">Instagram*</a> · <a href="https://www.youtube.com/@elizavetanmit" target="_blank" rel="noopener">YouTube</a> · <a href="https://t.me/elizavetanmit" target="_blank" rel="noopener">Telegram</a></p>
+<a class="btn" href="https://www.instagram.com/elizavetamit/" target="_blank" rel="noopener">Ещё лайфхаки в Instagram*</a>
+</section>
+</article>
+</div>
+</main>
+<footer class="site-footer"><div class="wrap footer-in">
+<div><a class="wordmark" href="./">Лиза Митрофанова</a><p>CRM и автоматизация через ИИ для дизайнеров интерьера.</p></div>
+<nav aria-label="Соцсети"><a href="https://www.instagram.com/elizavetamit/" target="_blank" rel="noopener">Instagram*</a><a href="https://www.youtube.com/@elizavetanmit" target="_blank" rel="noopener">YouTube</a><a href="https://t.me/elizavetanmit" target="_blank" rel="noopener">Telegram</a></nav>
+
+<p class="footnote">* Instagram принадлежит компании Meta, которая признана в России экстремистской организацией и запрещена.</p>
+</div></footer>
+<script src="assets/site.js?v=51ab9aba"></script>
+</body>
+</html>
